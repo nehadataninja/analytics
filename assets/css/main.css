@@ -1314,6 +1314,12 @@ input[type="radio"] + label:before {
     .image.main img {
       width: 100%; }
 
+  .image.featured {
+        display: block;
+        width: 100%;
+        margin: 0 0 2em 0;
+      }
+
 a.image {
   overflow: hidden; }
   a.image img {
