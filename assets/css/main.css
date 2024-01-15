@@ -2240,12 +2240,12 @@ button,
     #banner .award {
       display: block;
       margin: 0 0 0 0;
-      width: 20%; }
+      width: 100%; }
 
     #banner .award img{
         display: block;
         margin: 0 0 0 0;
-        width: 20%; }
+        width: 100%; }
     #banner .image img {
       height: 100%;
       -moz-object-fit: cover;
