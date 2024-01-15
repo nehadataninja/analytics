@@ -2241,6 +2241,11 @@ button,
       display: block;
       margin: 0 0 0 0;
       width: 20%; }
+
+    #banner .award img{
+        display: block;
+        margin: 0 0 0 0;
+        width: 20%; }
     #banner .image img {
       height: 100%;
       -moz-object-fit: cover;
