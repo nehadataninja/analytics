@@ -716,10 +716,7 @@ hr {
         margin-left: 41.66667%; }
       .row > .col-6-medium {
         width: 50%; }
-      .row > .image.featureds {
-        display: block;
-        width: 100%;
-        margin: 0 0 2em 0; }
+    
       .row > .off-6-medium {
         margin-left: 50%; }
       .row > .col-7-medium {
@@ -1291,6 +1288,12 @@ input[type="radio"] + label:before {
     font-weight: 900; }
   .icon.brands:before {
     font-family: 'Font Awesome 5 Brands'; }
+
+/* Featureds */
+  #featureds {
+      display: block;
+      width: 100%;
+      margin: 0 0 2em 0; }
 
 /* Image */
 .image {
