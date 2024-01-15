@@ -2236,7 +2236,8 @@ button,
     flex-shrink: 0;
     display: block;
     margin: 0 0 2em 4em;
-    width: 100%; }
+    width: 50%; }
+    
     #banner .image img {
       height: 100%;
       -moz-object-fit: cover;
