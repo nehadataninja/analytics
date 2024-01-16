@@ -2134,7 +2134,7 @@ button,
         overflow-x: hidden;
         overflow-y: auto;
         position: absolute;
-        top: 5%; }
+        top: 15%; }
         #sidebar > .inner:after {
           content: '';
           display: block;
