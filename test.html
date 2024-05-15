@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Images</title>
+  <style>
+    /* Add your CSS styles here */
+    .image-container {
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    button {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- First Page -->
+<section id="page1">
+  <div class="image-container">
+    <img src="images/Tree_PlantDashboard.png" alt="Image 1">
+  </div>
+  <button onclick="showPage(1)">1</button>
+  <button onclick="showPage(2)">2</button>
+  <button onclick="showPage(3)">3</button>
+  <button onclick="showPage(4)">4</button>
+</section>
+
+<!-- Second Page -->
+<section id="page2" style="display: none;">
+  <div class="image-container">
+    <img src="images/TreeProblems.png" alt="Image 2">
+  </div>
+  <button onclick="showPage(1)">1</button>
+  <button onclick="showPage(2)">2</button>
+  <button onclick="showPage(3)">3</button>
+  <button onclick="showPage(4)">4</button>
+</section>
+
+<!-- Third Page -->
+<section id="page3" style="display: none;">
+  <div class="image-container">
+    <img src="images/TreeTableau.png" alt="Image 3">
+  </div>
+  <button onclick="showPage(1)">1</button>
+  <button onclick="showPage(2)">2</button>
+  <button onclick="showPage(3)">3</button>
+  <button onclick="showPage(4)">4</button>
+</section>
+
+<script>
+  function showPage(pageNum) {
+    // Hide all sections
+    document.querySelectorAll('section').forEach(section => {
+      section.style.display = 'none';
+    });
+
+    // Show the selected page
+    document.getElementById('page' + pageNum).style.display = 'block';
+  }
+</script>
+
+</body>
+</html>

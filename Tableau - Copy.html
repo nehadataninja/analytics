@@ -38,7 +38,6 @@
 
 	button {
 		margin: 10px;
-		border-width: 1px; 
 	}
 
 	/* Add your CSS styles here */
@@ -51,26 +50,15 @@
 		margin: 0 auto; /* Center the container horizontally */
 		padding: 0px; /* Add some padding */
 		display: flex;
-		max-height: 69vh; /* Set a maximum height of 60% of the viewport height */
+		max-height: 68vh; /* Set a maximum height of 60% of the viewport height */
 
 		}
-
-	.button-container {
-		margin: 0 auto;
-		padding: 0px;
-		display: flex;
-		flex-direction: row;
-		align-content: center;
-		flex-wrap: wrap;
-		align-items: baseline;
-		justify-content: space-evenly;
-	}
 	#main > .inner > section {
-		padding: 0 0; /* Your desired padding value */
+		padding: 1em 0; /* Your desired padding value */
 	}
 
 	.image-container img {
-		max-width: 100%;
+		max-width: 90%;
 		height: auto;
 	}
 
@@ -81,13 +69,13 @@
 		transform: translateX(-50%);
 		background-color: #fff;
 		padding: 10px;
-		border: 0.5px solid #ccc;
+		border: 1px solid #ccc;
 		border-radius: 5px;
 		z-index: 999;
 	}
 
 	#page-navigation button {
-		margin: 1px;
+		margin: 5px;
 	}
 
 </style>
@@ -109,61 +97,37 @@
 									</ul>
 								</header>
 
-					
+								<!-- Introduction Section -->
+								<section id="introduction">
+									<p>Welcome to our Machine Learning projects section. Here you'll find various projects demonstrating data visualization, statistical analysis, and machine learning techniques. To view the code and additional resources, visit our <a href="https://github.com/nehadataninja/analytics" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>
+								</section>
 
-						
-                <!-- First Page -->
-                <section id="page1">
-				<div class ="button-container">
-					<button onclick="showPage(1)">Dashboard 1</button>
-                    <button onclick="showPage(2)">Dashboard 2</button>
-                    <button onclick="showPage(3)">Dashboard 3</button>
-                    <button onclick="showPage(4)">Dashboard 4</button>
-				</div>
-                    <div class="image-container">
-                        <img src="images/Tree_PlantDashboard.png" alt="Image 1">
-                    </div>
-               
-                </section>
+							<!-- Banner -->
+							<section id="banner">
+									<div class="content">
+										<div>
+											<div class="">
+												<article class="">
+													<a href="#" class="award"><img src="images/Tree_PlantDashboard.png" alt="" /></a>
+													<p>Ornare nulla proin odio consequat.</p>
+												</article>
+											</div>
+										</div>
+									</div>
 
-                <section id="page2">
-				<div class ="button-container">
-						<button onclick="showPage(1)">Dashboard 1</button>
-						<button onclick="showPage(2)">Dashboard 2</button>
-						<button onclick="showPage(3)">Dashboard 3</button>
-						<button onclick="showPage(4)">Dashboard 4</button>
-				</div>
-                    <div class="image-container">
-                        <img src="images/TreeUserDashboard.png" alt="Image 1">
-                    </div>
-               
-                </section>
+									<div class="content">
+										<div>
+											<div class="">
+												<article class="">
+													<a href="#" class="award"><img src="images/Tree_PlantDashboard.png" alt="" /></a>
+													<p>Ornare nulla proin odio consequat.</p>
+												</article>
+											</div>
+										</div>
+									</div>
+									
 
-				<section id="page3">
-				<div class ="button-container">
-						<button onclick="showPage(1)">Dashboard 1</button>
-						<button onclick="showPage(2)">Dashboard 2</button>
-						<button onclick="showPage(3)">Dashboard 3</button>
-						<button onclick="showPage(4)">Dashboard 4</button>
-				</div>
-                    <div class="image-container">
-                        <img src="images/TreeProblems.png" alt="Image 1">
-                    </div>
-                
-                </section>
-
-				<section id="page4">
-				<div class ="button-container">
-						<button onclick="showPage(1)">Dashboard 1</button>
-						<button onclick="showPage(2)">Dashboard 2</button>
-						<button onclick="showPage(3)">Dashboard 3</button>
-						<button onclick="showPage(4)">Dashboard 4</button>
-				</div>
-                    <div class="image-container">
-                        <img src="images/TreeTableau.png" alt="Image 1">
-                    </div>
-            
-                </section>
+							</section>
 						</div>
 					</div>
 
