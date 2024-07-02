@@ -38,7 +38,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                margin-top: 10px;
+                margin-top: 20px;
             }
             .icon-container {
                 text-align: center;
@@ -46,7 +46,7 @@
                 flex: 2 0 15%; /* Adjust width as needed */
             }
             .icon-container img {
-                width: 30px; /* Adjust image size */
+                width: 50px; /* Adjust image size */
                 height: auto;
             }
             .icon-container p {
@@ -66,15 +66,80 @@
                 margin: 0 10px;
                 list-style: none;
             }
-            /* css for table */
+/* CSS for compact timeline */
+.compact-timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
 
-            .timeline-table {
-            width: 110%;
-            }
-          
-            .timeline-table td {
-                padding: 0.4em
-            }
+.compact-timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #e0e0e0;
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    width: 8%; /* Adjust width as needed to fit all items */
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background: #e0e0e0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-dot.highlight {
+    background: #4CAF50;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin-top: 10px;
+    display: none; /* Hide by default */
+}
+
+.timeline-item:hover .timeline-content {
+    display: block; /* Show on hover */
+}
+
+.timeline-content h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+        
+
 
         </style>
     </head>
@@ -86,7 +151,7 @@
                         <div class="inner">
                             <!-- Header -->
                                 <header id="header">
-                                    <a href="index.html" class="logo"><strong><h3>Neha Naik's Portfolio</h3> </strong></a>
+                                    <a href="index.html" class="logo"><strong><h3>Hi, I am Neha Naik</h3> </strong></a>
                                     <ul class="icons">
                                         <li><a href="https://www.linkedin.com/in/neha-naik-analyst/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
                                         <li class="icon solid fa-envelope"></li>
@@ -98,43 +163,59 @@
                             <!-- Banner -->
                                 <section id="banner">
                                     <div class="content">
-                                    Experienced data analyst with over <b>10 </b> years of expertise translating intricate data into actionable insights, fueling
-                                    product innovation, operational enhancements, and strategic business choices
-                                     <br><br>   
                                     <b><h3>Timeline: </h3></b>
-                                    <div class="timeline-container">
-                                        <table class="timeline-table">
-                                          <tr>
-                                            <td class="timeline-year">2024</td>
-                                            <td class="timeline-event">Master's Data Analytics </td>
-                                            <td class="timeline-place">Northeastern University</td>
-                                            <td class="timeline-place">Boston, MA, USA</td>
-                                     
-                                          </tr>
-                                          <tr>
-                                            <td class="timeline-year">2014-2022</td>
-                                            <td class="timeline-event">Lead Data&Reporting Analyst</td>
-                                            <td class="timeline-place">Saint Gobain</td>
-                                            <td class="timeline-place">India</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="timeline-year">2012-2014</td>
-                                            <td class="timeline-event">Software Engineer</td>
-                                            <td class="timeline-place">MAQ Software</td>
-                                            <td class="timeline-place">India</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="timeline-year">2009-2012</td>
-                                            <td class="timeline-event">Masters</td>
-                                            <td class="timeline-place">University of Mumbai</td>
-                                            <td class="timeline-place">India</td>
-                                          </tr>
-                                        </table>
-                                      </div>
+                                        <!-- New Section for Timeline -->
+                                 <!-- Compact Timeline Section -->
+<!-- Compact Timeline Section -->
+<div class="compact-timeline">
+    <!-- Add each year as a timeline item -->
+    <div class="timeline-item">
+        <div class="timeline-dot highlight"></div>
+        <div class="timeline-content">
+            <h4>2012</h4>
+            <p>Completed Masters in Computer Application</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-dot highlight"></div>
+        <div class="timeline-content">
+            <h4>2012-2014</h4>
+            <p>Worked at MAQ Software</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-dot highlight"></div>
+        <div class="timeline-content">
+            <h4>2014-2022</h4>
+            <p>Worked at Saint Gobain</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-dot highlight"></div>
+        <div class="timeline-content">
+            <h4>2022-2024</h4>
+            <p>Studied at Northeastern University</p>
+        </div>
+    </div>
+    <!-- Add more timeline items for each year -->
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2013</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2014</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2015</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2016</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2017</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2018</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2019</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2020</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2021</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2022</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2023</h4></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h4>2024</h4></div></div>
+</div>
+
 
                                         <!-- End of New Section -->
 
-                                        <b><h3>Skills: </h3></b>
+                                        <br><b><h3>Skills: </h3></b>
 
                                         <!-- New Section for Icon Images with Captions -->
                                         <div class="icon-images">

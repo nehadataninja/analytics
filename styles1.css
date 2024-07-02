@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.skills {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    width: 80px;
+}
+
+.stars {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    color: lightgray;
+}
+
+.stars:before {
+    content: '★★★★★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: gold;
+    overflow: hidden;
+    width: 0;
+}
+
+.filled-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: gold;
+}
+
+.filled-stars:before {
+    content: '★★★★★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: gold;
+}
