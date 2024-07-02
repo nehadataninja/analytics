@@ -2193,7 +2193,7 @@ button,
     text-align: right; }
   @media screen and (max-width: 1680px) {
     #header {
-      padding-top: 2em; } }
+      padding-top: 3em; } }
   @media screen and (max-width: 736px) {
     #header {
       padding-top: 6.5em; }
