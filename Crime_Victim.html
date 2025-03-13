@@ -38,6 +38,7 @@
 
 	button {
 		margin: 10px;
+		border-width: 1px; 
 	}
 
 	/* Add your CSS styles here */
@@ -50,15 +51,26 @@
 		margin: 0 auto; /* Center the container horizontally */
 		padding: 0px; /* Add some padding */
 		display: flex;
-		max-height: 68vh; /* Set a maximum height of 60% of the viewport height */
+		max-height: 69vh; /* Set a maximum height of 60% of the viewport height */
 
 		}
+
+	.button-container {
+		margin: 0 auto;
+		padding: 0px;
+		display:block;
+		flex-direction:initial;
+		align-content:flex-start;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-evenly;
+	}
 	#main > .inner > section {
 		padding: 1em 0; /* Your desired padding value */
 	}
 
 	.image-container img {
-		max-width: 90%;
+		max-width: 100%;
 		height: auto;
 	}
 
@@ -69,13 +81,13 @@
 		transform: translateX(-50%);
 		background-color: #fff;
 		padding: 10px;
-		border: 1px solid #ccc;
+		border: 0.5px solid #ccc;
 		border-radius: 5px;
 		z-index: 999;
 	}
 
 	#page-navigation button {
-		margin: 5px;
+		margin: 1px;
 	}
 
 </style>
@@ -97,37 +109,33 @@
 									</ul>
 								</header>
 
-								<!-- Introduction Section -->
-								<section id="introduction">
-									<p>Welcome to our Machine Learning projects section. Here you'll find various projects demonstrating data visualization, statistical analysis, and machine learning techniques. To view the code and additional resources, visit our <a href="https://github.com/nehadataninja/analytics" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>
-								</section>
+					
 
-							<!-- Banner -->
-							<section id="banner">
-									<div class="content">
-										<div>
-											<div class="">
-												<article class="">
-													<a href="#" class="award"><img src="images/Tree_PlantDashboard.png" alt="" /></a>
-													<p>Ornare nulla proin odio consequat.</p>
-												</article>
-											</div>
-										</div>
-									</div>
+						
+                <!-- First Page -->
+                <section id="page1">
+				<div class ="button-container">
+					<button onclick="showPage(1)">Dashboard 1</button>
+                    <button onclick="showPage(2)">Dashboard 2</button>
+				</div>
+                    <div class="image-container">
+                        <img src="images/LA_Crime_Report.png" alt="Image 1">
+                    </div>
+               
+                </section>
 
-									<div class="content">
-										<div>
-											<div class="">
-												<article class="">
-													<a href="#" class="award"><img src="images/Tree_PlantDashboard.png" alt="" /></a>
-													<p>Ornare nulla proin odio consequat.</p>
-												</article>
-											</div>
-										</div>
-									</div>
-									
+				<section id="page2">
+				<div class ="button-container">
+						<button onclick="showPage(1)">Dashboard 1</button>
+						<button onclick="showPage(2)">Dashboard 2</button>
+				</div>
+                    <div class="image-container">
+                        <img src="images/Victim_Data_Analysis.png" alt="Image 1">
+                    </div>
+                
+                </section>
 
-							</section>
+		
 						</div>
 					</div>
 
@@ -141,19 +149,17 @@
 								</header>
 								<ul>
 									<li><a href="index.html">Homepage</a></li>
-									<li><a href="projects.html">MACHINE LEARNING</a></li>
-									<li><a href="awards.html">AWARDS&RECOGNITION</a></li>
 									<li>
-										<span class="opener">DATA VISUALIZATION</span>
+										<span class="opener">TABLEAU VISUALIZATION</span>
 										<ul>
-											<li><a href="#">QLIK</a></li>
-											<li><a href="Tableau.html">TABLEAU</a</li>
-											<li><a href="#">POWER BI</a></li>
-											<li><a href="#">R SHINY</a></li>
+										
+											<li><a href="Tableau.html">TREE HEALTH</a></li>
+											<li><a href="Crime_Victim.html">CRIME ANALYSIS</a></li>
 										</ul>
 									</li>
+									<li><a href="projects.html">MACHINE LEARNING</a></li>
+									<li><a href="awards.html">AWARDS&RECOGNITION</a></li>
 									
-									<li><a href="#">DATABASE MANAGEMENT</a></li>
 								</ul>
 							</nav>
 
